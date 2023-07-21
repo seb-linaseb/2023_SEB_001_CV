@@ -1,0 +1,225 @@
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 200px;
+    max-width: 1440px;
+    background-color: lightgrey;
+}
+
+/*---------------------------*/
+/*          HEADER           */
+/*---------------------------*/
+
+.header {
+    text-align: center;
+}
+
+.header_job_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    height: 100px;
+}
+
+.header_picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.header_contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+}
+
+/********** HEADER_JOB_TITLE **********/
+
+.cv_title {
+    color: rgb(68, 114, 196);
+    font-size : 1.125rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cv_title_spe {
+    font-size : 1.125rem;
+    font-weight: bold;
+}
+
+/********** HEADER_PICTURE **********/
+
+.cv_photo {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 200px;
+}
+
+.photo_seb {
+    width: 60%;
+}
+
+/********** HEADER_CONTACT **********/
+
+.name_firstname {
+    font-size : 1rem;
+    font-weight: bold;
+}
+
+.marital_status {
+    font-size: 0.75rem;
+}
+
+.address {
+    font-size: 0.80rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.contact{
+    width: 150px;
+}
+
+.contact_link {
+    display: flex;
+    align-items: center;
+}
+
+.contact_logo {
+    width: 15%;
+    margin-right: 0.625rem;
+}
+
+.image_logo {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.contact_text {
+    width: 70%;
+    font-size: 0.75rem;
+    text-align: left;
+}
+
+
+
+
+
+/* Tablettes */
+@media screen and (min-width : 480px) and (max-width : 1023px) {
+
+    /*---------------------------*/
+    /*          HEADER           */
+    /*---------------------------*/
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .header_job_title {
+        order: 1;
+        width: 100%;
+    }
+
+    .header_picture {
+        order: 3;
+        width: 50%;
+        height: 280px;
+    }
+
+    .header_contact {
+        order: 2;
+        width: 50%;
+    }
+
+    /********** HEADER_JOB_TITLE **********/
+
+    .cv_title {
+        font-size : 2.25rem;
+    }
+
+    .cv_title_spe {
+        font-size : 2.25rem;
+    }
+
+    /********** HEADER_PICTURE **********/
+
+    .cv_photo {
+        width: 200px;
+    }
+    
+    .photo_seb {
+        width: 80%;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width : 1024px) {
+
+    /*---------------------------*/
+    /*          HEADER           */
+    /*---------------------------*/
+
+    .header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header_job_title {
+        order: 2;
+        width: 50%;
+        height: 280px;
+    }
+
+    .header_picture {
+        order: 3;
+        width: 25%;
+        height: 280px;
+    }
+
+    .header_contact {
+        order: 1;
+        width: 25%;
+        align-items: normal;
+        margin-left: 5%;
+    }
+
+    /********** HEADER_JOB_TITLE **********/
+
+    .cv_title {
+        font-size : 2.25rem;
+    }
+
+    .cv_title_spe {
+        font-size : 2.25rem;
+    }
+
+    /********** HEADER_PICTURE **********/
+
+    .cv_photo {
+        width: 200px;
+    }
+    
+    .photo_seb {
+        width: 100%;
+    }
+
+    /********** HEADER_CONTACT **********/
+
+    .name_firstname {
+        text-align: left;
+    }
+    .marital_status {
+        text-align: left;
+    }
+
+    .address {
+        text-align: left;
+    }
+}
