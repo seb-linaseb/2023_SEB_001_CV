@@ -58,7 +58,8 @@
 
 /********** HEADER_PICTURE **********/
 
-.cv_photo {
+.cv_photo,
+.hobby_logo {
     text-align: center;
     display: table-cell;
     vertical-align: middle;
@@ -67,6 +68,10 @@
 
 .photo_seb {
     width: 60%;
+}
+
+.image_hobby {
+    width: 100px;
 }
 
 /********** HEADER_CONTACT **********/
@@ -141,16 +146,24 @@
     flex-direction: column;
     justify-content: space-evenly;
     padding: 5px;
-    height: 400px;
+    height: 450px;
     background-color: lightgreen;
 }
 
-.black_line {
+.black_line,
+.black_double_line {
     border-top: 5px solid black;
     border-bottom: 5px solid black;
     margin: 0 5px 10px 5px;
     padding: 10px;
+}
+
+.black_line {
     height: 20px;
+}
+
+.black_double_line {
+    height: 40px;
 }
 
 .category {
@@ -162,11 +175,25 @@
 
 /********** MAIN_EXPERIENCE **********/
 
-.experience_list {
+.experience_list,
+.certificate_list,
+.hobby_list {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+}
+
+.experience_list {
     height: 850px;
+    justify-content: space-evenly;
+}
+
+.certificate_list {
+    height: 400px;
+    justify-content: space-around;
+}
+
+.hobby_list {
+    justify-content: space-evenly;
 }
 
 .experience_title,
@@ -198,11 +225,16 @@
     padding: 5px 0;
 }
 
+.list_1,
+.hobby_detail_list {
+    font-size: 10px;
+    padding-top: 5px;
+}
+
 .list_1 {
+    padding-left: 5px;
     list-style-type: disc;
     list-style-position: inside;
-    padding: 5px 0 0 5px;
-    font-size: 10px;
 }
 
 .list_2 {
@@ -381,7 +413,7 @@
 
 .progress-round-xlarge {
     border-radius:16px;
-    width: 60px;
+    width: 50px;
 }
 
 .progress-red {
@@ -526,10 +558,15 @@
     font-weight: bold;
 }
 
-.jump_line {
+.jump_line,
+.jump_line_hobby {
     display: block;
     font-weight: bold;
     margin-left: 13px;
+}
+
+.jump_line_hobby {
+    font-weight: normal;
 }
 
 .short_width {
@@ -540,12 +577,33 @@
     /*          FOOTER           */
     /*---------------------------*/
 
+.footer {
+    font-size: 12px;
+    text-align: center;
+    height: 600px;
+}
 
+.hobby_list {
+    height: 500px;
+}
 
+.hobby {
+    display: flex;
+    flex-direction: column;
+    /* font-weight: bold; */
+}
 
+.hobby_logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* height: 20px; */
+}
 
-
-
+.hobby_title {
+    font-weight: bold;
+    padding: 5px;
+}
 
 
 
@@ -602,6 +660,15 @@
         height: 650px;
     }
 
+    .certificate_list {
+        height: 400px;
+    }
+
+    .experience_list,
+    .certificate_list {
+        padding: 10px;
+    }
+
     .pro_block {
         display: flex;
         justify-content: space-between;
@@ -611,7 +678,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        width: 50%;
+        width: 45%;
         text-align: center;
     }
 
@@ -630,6 +697,32 @@
         width: 100%;
     }
 
+    /*-----------------------------*/
+    /*            FOOTER           */
+    /*-----------------------------*/
+
+    .footer {
+        height: 400px;
+    }
+
+    .hobby_list {
+        height: 300px;
+    }
+    
+
+    .hobby {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .hobby_logo {
+        width: 40%;
+    }
+
+    .hobby_detail_list {
+        list-style-type: disc;
+        list-style-position: inside;
+    }
 }
 
 /* Tablet large */
@@ -673,6 +766,9 @@
         letter-spacing: normal;
     }
 
+    .hobby_logo {
+        width: 20%;
+    }
 }
 
 /* Tablet + Tablet large */
@@ -746,6 +842,5 @@
     .address {
         text-align: left;
     }
-
 
 }
