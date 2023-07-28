@@ -1,9 +1,15 @@
+/* Container */
+/* 200 => 1440 */
+
 .container {
     font-family: Arial, Helvetica, sans-serif;
     min-width: 200px;
     max-width: 1440px;
+    margin: 0 auto;
     background-color: lightgrey;
 }
+
+/* Mobile first */
 
 /*---------------------------*/
 /*          HEADER           */
@@ -18,7 +24,7 @@
     flex-direction: column;
     justify-content: center;
     font-size: 18px;
-    height: 100px;
+    height: 80px;
 }
 
 .header_picture {
@@ -33,7 +39,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 280px;
+    height: 250px;
 }
 
 /********** HEADER_JOB_TITLE **********/
@@ -106,11 +112,457 @@
 }
 
 
+/*---------------------------*/
+/*           MAIN            */
+/*---------------------------*/
+
+.main {
+    font-size: 12px;
+}
+
+.main_experience {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    height: 900px;
+    background-color: lightcoral;
+}
+
+.main_skills {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    height: 1050px;
+    background-color: lightpink;
+}
+
+.main_education {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5px;
+    height: 400px;
+    background-color: lightgreen;
+}
+
+.black_line {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    margin: 0 5px 10px 5px;
+    padding: 10px;
+    height: 20px;
+}
+
+.category {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/********** MAIN_EXPERIENCE **********/
+
+.experience_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 850px;
+}
+
+.experience_title,
+.certificate_title {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(68, 114, 196);
+}
+
+.experience_company {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.experience_period,
+.certificate_period {
+    font-size: 10px;
+}
+
+.pro_project,
+.stats_pro_project {
+    padding: 5px 0;
+}
+
+.experience_projects {
+    color: rgb(68, 114, 196);
+    font-style: italic;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.list_1 {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 5px 0 0 5px;
+    font-size: 10px;
+}
+
+.list_2 {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 5px 0 0 5px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+
+.pro_project_details {
+    font-size: 10px;
+    font-weight: normal;
+    font-style: italic;
+    margin-left: -5px;
+}
+
+.project_details {
+    font-style: italic;
+}
+
+.oclock {
+    padding-left: 13px;
+}
+
+.software_row {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.software_row_large {
+    display: flex;
+    align-items: top;
+}
+
+.software_logo {
+    max-width: 25px;
+    margin: 0 10px;
+}
+
+.image_software {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.software_text {
+    font-size: 10px;
+}
+
+.software_text_access {
+    padding-top: 5px;
+    font-size: 10px;
+}
+
+/*========== CIRCLE STATS DESIGN ==========*/
+
+.graph_stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5px 0;
+}
+
+.techno {
+    display: flex;
+    flex-direction: column;
+}
+
+.circle_top_value,
+.circle_value {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.75rem;
+    margin-top: -10px;
+}
+
+.circle_top_value {
+    margin-top: 0;
+}
+
+.blue_text {
+    color: #1e51dc;
+}
+
+.red_text {
+    color: red;
+}
+
+.white_text {
+    color: white;
+}
+
+.green_text {
+    color: green;
+}
+
+.purple_text {
+    color: purple;
+}
+
+/* Circle draw */
+
+.circle-wrap {
+    width: 50px;
+    height: 50px;
+    background: #fefcff;
+    border-radius: 50%;
+    transform: rotate(225deg);
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.mask.full,
+.circle .fill {
+    transform: rotate(135deg);
+}
+
+/* Circle missing portion */
+
+.circle-wrap .circle .mask {
+    clip-path: inset(0px calc(100% - 50px) calc(100% - 50px) 24px);
+}
+
+.mask .fill {
+    clip-path: inset(0px calc(100% - 24px) calc(100% - 50px) 0);
+}
+
+/* Coloured circle */
+
+.mask .fill.circle_blue {
+    background-color: #1e51dc;
+}
+
+.mask .fill.circle_red {
+    background-color: red;
+}
+
+/* White interior circle */
+
+.circle-wrap .inside-circle {
+    width: 40.33px;
+    height: 40.33px;
+    border-radius: 50%;
+    background: white;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 4.66px;
+    margin-left: 4.66px;
+    position: absolute;
+    z-index: 100;
+    transform: rotate(135deg);
+}
+
+.techno_logo {
+    display: flex;
+    justify-content: center;
+    margin: 5px auto 0 auto;
+    height: 25px;
+}
+
+.rails {
+    height: 20px;
+    padding: 2.5px;
+}
+
+/*========== ROUND BAR STATS DESIGN ==========*/
+
+.progress-round-xlarge {
+    border-radius:16px;
+    width: 60px;
+}
+
+.progress-red {
+    background-color: red;
+}
+
+.progress-green {
+    background-color: green;
+}
+
+.progress-purple {
+    background-color: purple;
+}
+
+.progress-light-grey {
+    background-color: #f1f1f1;
+}
+
+.task_value {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+/********** MAIN SKILLS **********/
+
+.language_type, .concept_type {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.tool_type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 180px;
+    margin: 0 auto;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+.language_type_label,
+.tool_type_label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+
+.language_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 35px;
+    text-decoration: none;
+    color: black;
+}
+
+.language_block:hover {
+    background-color: lightskyblue;
+    color: blue;
+}
+
+.language_logo {
+    display: flex;
+    width: 25px;
+    margin-right: 2rem;
+}
+
+.language_progress {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.language_label {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.progress_bar {
+    position: relative;
+    background-color: #333;
+    width: 65px;
+    height: 12px;
+    padding-left: 10px;
+    transform: skew(-30deg);
+}
+
+.progress_circle {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    transform: skew(30deg);
+}
+
+.progress_circle_full {
+    background-color: lightgreen;
+}
+
+.tool_block {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.tool_logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20px;
+}
+
+.tool_label {
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/********** MAIN EDUCATION **********/
+
+.formation_school {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.jump_line {
+    display: block;
+    font-weight: bold;
+    margin-left: 13px;
+}
+
+.short_width {
+    letter-spacing: -0.5px;
+}
+
+    /*---------------------------*/
+    /*          FOOTER           */
+    /*---------------------------*/
 
 
 
-/* Tablettes */
-@media screen and (min-width : 480px) and (max-width : 1023px) {
+
+
+
+
+
+
+
+
+
+    /*-----------------------------------------------*/
+    /*          RESPONSIVE - MEDIA QUERIES           */
+    /*-----------------------------------------------*/
+
+/* Tablet */
+/* 480 => 767 */
+@media screen and (min-width : 480px) and (max-width : 767px) {
+}
+
+/* Tablet min */
+/* 480 => 1440 */
+@media screen and (min-width : 480px) {
 
     /*---------------------------*/
     /*          HEADER           */
@@ -119,6 +571,118 @@
     .header {
         display: flex;
         flex-direction: row;
+    }
+
+    .header_picture {
+        order: 3;
+        height: 280px;
+    }
+
+    /********** HEADER_JOB_TITLE **********/
+
+    .cv_title, .cv_title_spe {
+        font-size : 2.25rem;
+    }
+
+    /*---------------------------*/
+    /*           MAIN            */
+    /*---------------------------*/
+
+    .main_experience {
+        height: 700px;
+    }
+
+    .main_skills {
+        box-sizing: border-box;
+        order: 2;
+        height: 700px;
+    }
+
+    .experience_list {
+        height: 650px;
+    }
+
+    .pro_block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .stats_pro {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 50%;
+        text-align: center;
+    }
+
+    .skills_details,
+    .tools_details {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .language_type {
+        width: 50%;
+    }
+
+    .concept_type {
+        width: 100%;
+    }
+
+}
+
+/* Tablet large */
+/* 768 => 1023 */
+@media screen and (min-width : 768px) and (max-width : 1023px) {
+}
+
+/* Tablet large min */
+/* 768 => 1440 */
+@media screen and (min-width : 768px) {
+
+    /*---------------------------*/
+    /*           MAIN            */
+    /*---------------------------*/
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .main_experience {
+        box-sizing: border-box;
+        order: 1;
+        width: 50%;
+    }
+
+    .main_skills_education {
+        width: 50%;
+        order: 2;
+    }
+
+    .main_education {
+        box-sizing: border-box;
+        order: 3;
+        margin-left: -100%;
+        width: 200%;
+    }
+
+    .short_width {
+        letter-spacing: normal;
+    }
+
+}
+
+/* Tablet + Tablet large */
+/* 480 => 1023 */
+@media screen and (min-width : 480px) and (max-width : 1023px) {
+
+    /*---------------------------*/
+    /*          HEADER           */
+    /*---------------------------*/
+    .header {
         flex-wrap: wrap;
     }
 
@@ -128,9 +692,7 @@
     }
 
     .header_picture {
-        order: 3;
         width: 50%;
-        height: 280px;
     }
 
     .header_contact {
@@ -138,38 +700,21 @@
         width: 50%;
     }
 
-    /********** HEADER_JOB_TITLE **********/
-
-    .cv_title {
-        font-size : 2.25rem;
-    }
-
-    .cv_title_spe {
-        font-size : 2.25rem;
-    }
-
     /********** HEADER_PICTURE **********/
 
-    .cv_photo {
-        width: 200px;
-    }
-    
     .photo_seb {
         width: 80%;
     }
+
 }
 
 /* Desktop */
+/* 1023 => 1440 */
 @media screen and (min-width : 1024px) {
 
     /*---------------------------*/
     /*          HEADER           */
     /*---------------------------*/
-
-    .header {
-        display: flex;
-        flex-direction: row;
-    }
 
     .header_job_title {
         order: 2;
@@ -178,9 +723,7 @@
     }
 
     .header_picture {
-        order: 3;
         width: 25%;
-        height: 280px;
     }
 
     .header_contact {
@@ -190,36 +733,19 @@
         margin-left: 5%;
     }
 
-    /********** HEADER_JOB_TITLE **********/
-
-    .cv_title {
-        font-size : 2.25rem;
-    }
-
-    .cv_title_spe {
-        font-size : 2.25rem;
-    }
-
     /********** HEADER_PICTURE **********/
 
-    .cv_photo {
-        width: 200px;
-    }
-    
     .photo_seb {
         width: 100%;
     }
 
     /********** HEADER_CONTACT **********/
 
-    .name_firstname {
-        text-align: left;
-    }
-    .marital_status {
-        text-align: left;
-    }
-
+    .name_firstname,
+    .marital_status,
     .address {
         text-align: left;
     }
+
+
 }
