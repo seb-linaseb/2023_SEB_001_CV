@@ -18,6 +18,10 @@ a:hover {
     color: blue;
 }
 
+
+
+
+
 /* Mobile first */
 
 /*---------------------------*/
@@ -80,7 +84,7 @@ a:hover {
 }
 
 .image_hobby {
-    width: 100px;
+    max-width: 100px;
 }
 
 /********** HEADER_CONTACT **********/
@@ -474,7 +478,8 @@ a:hover {
 }
 
 .language_type_label,
-.tool_type_label {
+.tool_type_label,
+.concept_type_label {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -875,7 +880,7 @@ a:hover {
     .header_job_title {
         order: 2;
         width: 50%;
-        height: 280px;
+        height: 300px;
     }
 
     .header_picture {
@@ -886,7 +891,14 @@ a:hover {
         order: 1;
         width: 25%;
         align-items: normal;
-        margin-left: 5%;
+        margin-left: 2%;
+        height: 300px;
+    }
+
+    /********** HEADER_JOB_TITLE **********/
+
+    .cv_title, .cv_title_spe {
+        font-size : 36pt;
     }
 
     /********** HEADER_PICTURE **********/
@@ -897,45 +909,213 @@ a:hover {
 
     /********** HEADER_CONTACT **********/
 
+    .contact {
+        width: 200px;
+    }
+
+    .name_firstname {
+        font-size : 16pt;
+    }
+
+    .marital_status {
+        font-size: 10pt;
+    }
+
+    .address {
+        font-size: 12pt;
+        margin-top: 18pt;
+        margin-bottom: 18pt;
+    }
     .name_firstname,
     .marital_status,
     .address {
         text-align: left;
     }
 
+    .contact_text {
+        font-size: 13pt;
+    }
+
     /*-------------------------*/
     /*          MAIN           */
     /*-------------------------*/
 
+    .main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* font-size: 9pt; */
+    }
+
+    .main_experience {
+        /* padding: 3.75pt; */
+        /* box-sizing: border-box; */
+        order: 1;
+        width: 50%;
+        height: 1300px;
+    }
+
+    .main_skills_education {
+        width: 50%;
+        order: 2;
+    }
+
+    .main_skills {
+        /* padding: 3.75pt; */
+        box-sizing: border-box;
+        order: 2;
+        height: 850px;
+    }
+
+    .main_education {
+        box-sizing: border-box;
+        order: 3;
+        /* padding: 3.75pt; */
+        height: 450px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .category {
+        font-size: 27px;
+    }
+
+    .black_line {
+        height: 25px;
+    }
+
+    .experience_list,
+    .certificate_list {
+        /* justify-content: space-between; */
+    }
+
+    .experience_list {
+        /* justify-content: space-evenly; */
+        height: 900px;
+    }
+
+    .experience_title,
+    .certificate_title {
+        font-size: 23px;
+    }
+
+    .experience_company {
+        font-size: 20px;
+    }
+
+    .experience_projects {
+        font-size: 18px;
+    }
+
+    .skills_details,
+    .tools_details {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .tools_details {
+        margin: 10pt 0;
+    }
+
+    .language_type, .concept_type {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* font-size: 7.5pt; */
+        /* padding: 7.5pt 0; */
+    }
+
+    .language_type {
+        width: 50%;
+    }
+    
+    .language_block {
+        width: 200px;
+    }
+
+    .language_type_label,
+    .tool_type_label,
+    .concept_type_label {
+        font-size: 18px;
+    }
+
+    .concept_type_label {
+        width: 300px;
+    }
+
+    .language_label,
+    .tool_label {
+        font-size: 15px;
+    }
+
+    .concept_type {
+        width: 100%;
+    }
+
+    .tool_type {
+        width: 225px;
+        /* margin: 0 auto; */
+        /* padding: 7.5pt 0; */
+    }
+
+    .tool_block {
+        width: 65px;
+    }
+    
+    .tool_logo {
+        height: 25px;
+    }
+
     .list_1 {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .list_2 {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .pro_project {
-        width: 60%;
+        width: 80%;
     }
 
     .pro_project_details {
-        font-size: 12px;
+        font-size: 15px;
         padding-left: 12%;
     }
 
+    .task_value,
+    .circle_top_value,
+    .circle_value {
+        font-size: 15px;
+    }
+
+    .circle-wrap {
+        margin: 0 auto;
+    }
+
     .oclock {
-        font-size: 12px;
+        font-size: 15px;
         padding-left: 6%;
     }
 
     .software_text,
     .software_text_access {
-        font-size: 13px;
+        font-size: 16px;
+    }
+
+    .software_row {
+        height: 50px;
+    }
+
+    .software_logo {
+        max-width: 40px;
     }
 
     .access {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .jump_line {
@@ -947,12 +1127,62 @@ a:hover {
         font-size: 12px;
     }
 
+    .formation_school {
+        font-size: 20px;
+    }
+
+    .experience_period,
+    .certificate_period {
+        font-size: 14px;
+    }
+
+    .language_block {
+        height: 45px;
+    }
+
+    .language_logo {
+        width: 35px;
+    }
+
     /*---------------------------*/
     /*          FOOTER           */
     /*---------------------------*/
 
+    .footer {
+        /* font-size: 11pt; */
+        text-align: center;
+        height: 150px;
+    }
+
+    .hobby_list {
+        flex-direction: row;
+        height: 62px;
+        padding-left: 16px;
+    }
+
+    .hobby {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .hobby_title {
+        /* padding: 3.75pt; */
+        font-size: 18px;
+    }
+
+    .hobby_logo {
+        width: 10%;
+    }
+
+    .hobby_text {
+        padding-left: 12%;
+    }
+
+
+
     .hobby_detail_list {
-        font-size: 13px;
+        font-size: 16px;
+        padding-left: 5pt;
     }
 
     .jump_line_hobby {
@@ -1405,7 +1635,8 @@ a:hover {
     }
 
     .language_type_label,
-    .tool_type_label {
+    .tool_type_label,
+    .concept_type_label {
         color: black;
         width: 100pt;
         height: 15pt;
