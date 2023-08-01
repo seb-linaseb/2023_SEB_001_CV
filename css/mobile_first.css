@@ -326,16 +326,16 @@
     color: red;
 }
 
-.white_text {
-    color: white;
-}
-
 .green_text {
     color: green;
 }
 
 .purple_text {
     color: purple;
+}
+
+.white_text {
+    color: white;
 }
 
 /* Circle draw */
@@ -505,6 +505,10 @@
 .language_label {
     font-weight: bold;
     padding-left: 10px;
+}
+
+.print-only {
+    display: none;
 }
 
 .progress_bar {
@@ -843,4 +847,576 @@
         text-align: left;
     }
 
+}
+
+
+
+
+
+    /*----------------------------------*/
+    /*          PRINT VERSION           */
+    /*----------------------------------*/
+
+@media print {
+
+    .container {
+        width: 21cm;
+    }
+
+    /*---------------------------*/
+    /*          HEADER           */
+    /*---------------------------*/
+
+    .header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header_job_title {
+        font-size: 10.3pt;
+        order: 2;
+        width: 50%;
+        height: 122pt;
+    }
+
+    .header_picture {
+        order: 3;
+        height: 122pt;
+        width: 25%;
+    }
+
+    .header_contact {
+        height: 150pt;
+        order: 1;
+        width: 25%;
+        align-items: normal;
+        margin-left: 10pt;
+
+    }
+
+    /********** HEADER_JOB_TITLE **********/
+
+    .cv_title, .cv_title_spe {
+        font-size : 28pt;
+    }
+
+    /********** HEADER_PICTURE **********/
+
+    .cv_photo,
+    .hobby_logo {
+        width: 100pt;
+    }
+
+    .photo_seb {
+        width: 100%;
+    }
+
+    .image_hobby {
+        height: 31pt;
+    }
+
+    /********** HEADER_CONTACT **********/
+
+    .name_firstname {
+        font-size : 11pt;
+    }
+
+    .marital_status {
+        font-size: 7pt;
+    }
+
+    .address {
+        font-size: 8.3pt;
+        margin-top: 12pt;
+        margin-bottom: 12pt;
+    }
+
+    .name_firstname,
+    .marital_status,
+    .address {
+        text-align: left;
+    }
+
+    .contact{
+        width: 100pt;
+    }
+
+    .contact_link {
+        text-decoration: none;
+        color: black;
+    }
+
+    .contact_logo {
+        margin-right: 5.7pt;
+    }
+
+    .contact_text {
+        font-size: 9pt;
+    }
+
+    /*---------------------------*/
+    /*           MAIN            */
+    /*---------------------------*/
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 9pt;
+    }
+
+    .main_experience {
+        padding: 3.75pt;
+        box-sizing: border-box;
+        order: 1;
+        width: 50%;
+        height: 537pt;
+    }
+
+    .main_skills_education {
+        width: 50%;
+        order: 2;
+    }
+
+    .main_skills {
+        padding: 3.75pt;
+        box-sizing: border-box;
+        order: 2;
+        height: 357pt;
+    }
+
+    .main_education {
+        box-sizing: border-box;
+        order: 3;
+        padding: 3.75pt;
+        height: 180pt;
+    }
+
+    .black_line,
+    .black_double_line {
+        border-top: 3.75pt solid black;
+        border-bottom: 3.75pt solid black;
+        margin: 0 3.75pt 7.5pt 3.75pt;
+        padding: 7.5pt;
+    }
+
+    .black_line {
+        height: 15pt;
+    }
+
+    .black_double_line {
+        height: 13.5pt;
+    }
+
+    .category {
+        font-size: 13.5pt;
+    }
+
+    /********** MAIN_EXPERIENCE **********/
+
+    .experience_list,
+    .certificate_list {
+        justify-content: space-between;
+    }
+
+    .experience_list {
+        height: 488pt;
+    }
+
+    .certificate_list {
+        height: 150pt;
+    }
+
+    .experience_list,
+    .certificate_list {
+        padding: 7.5pt;
+    }
+
+    .experience_title,
+    .certificate_title {
+        font-size: 12pt;
+    }
+
+    .experience_company {
+        font-size: 10.5pt;
+    }
+
+    .experience_period,
+    .certificate_period {
+        font-size: 7.5pt;
+    }
+
+    .pro_block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .stats_pro {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 45%;
+        text-align: center;
+    }
+
+
+    .pro_project,
+    .stats_pro_project {
+        padding: 3.75pt 0;
+    }
+
+    .experience_projects {
+        font-size: 10.5pt;
+        padding: 3.75pt 0;
+    }
+
+    .stats_pro_project h3.experience_projects {
+        display: none;
+    }
+
+    .list_1,
+    .hobby_detail_list {
+        font-size: 8pt;
+        padding-top: 3.75pt;
+    }
+
+    .list_1 {
+        padding-left: 3.75pt;
+    }
+
+    .list_2 {
+        padding: 3.75pt 0 0 3.75pt;
+        font-size: 8.25pt;
+    }
+
+
+    .pro_project_details {
+        font-size: 8pt;
+        margin-left: -3.75pt;
+    }
+
+    .oclock {
+        padding-left: 9.75pt;
+    }
+
+    .software_row {
+        height: 22.5pt;
+    }
+
+    .software_logo {
+        max-width: 18.75pt;
+        margin: 0 7.5pt;
+    }
+
+    .image_software {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .software_text {
+        font-size: 8pt;
+    }
+
+    .software_text_access {
+        padding-top: 3.75pt;
+        font-size: 8pt;
+    }
+
+    /*========== CIRCLE STATS DESIGN ==========*/
+
+    .graph_stats {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 3.75pt 0;
+    }
+
+    .techno {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .circle_top_value,
+    .circle_value {
+        display: block;
+        font-weight: bold;
+        text-align: center;
+        font-size: 9pt;
+        margin-top: -5.63pt;
+    }
+
+    .circle_top_value {
+        margin-top: 0;
+    }
+
+    .blue_text {
+        color: #1e51dc;
+    }
+
+    .red_text {
+        color: red;
+    }
+
+    .green_text {
+        color: green;
+    }
+
+    .purple_text {
+        color: purple;
+    }
+
+    /* Circle draw */
+
+    .circle-wrap {
+        width: 37.5pt;
+        height: 37.5pt;
+        background: #fefcff;
+        border-radius: 50%;
+    }
+
+    .circle-wrap .circle .mask,
+    .circle-wrap .circle .fill {
+        width: 37.5pt;
+        height: 37.5pt;
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    /* Circle missing portion */
+
+    .circle-wrap .circle .mask {
+        clip-path: inset(0pt calc(100% - 37.5pt) calc(100% - 37.5pt) 18pt);
+    }
+
+    .mask .fill {
+        clip-path: inset(0pt calc(100% - 18pt) calc(100% - 37.5pt) 0);
+    }
+
+    /* Coloured circle */
+
+    .mask .fill.circle_blue {
+        background-color: white;
+    }
+
+    .mask .fill.circle_red {
+        background-color: white;
+    }
+
+    /* White interior circle */
+
+    .circle-wrap .inside-circle {
+        width: 30.25pt;
+        height: 30.25pt;
+        border-radius: 50%;
+        background: white;
+        line-height: 30pt;
+        text-align: center;
+        margin-top: 3.5pt;
+        margin-left: 3.5pt;
+        position: absolute;
+        z-index: 100;
+    }
+
+    .techno_logo {
+        display: flex;
+        justify-content: center;
+        margin: 3.75pt auto 0 auto;
+        height: 18.75pt;
+    }
+
+    .rails {
+        height: 15pt;
+        padding: 1.88pt;
+    }
+
+    /*========== ROUND BAR STATS DESIGN ==========*/
+
+    .progress-round-xlarge {
+        border-radius:12pt;
+        width: 37.5pt;
+    }
+
+    .progress-red {
+        background-color: white;
+    }
+
+    .progress-green {
+        background-color: white;
+    }
+
+    .progress-purple {
+        background-color: white;
+    }
+
+    .progress-light-grey {
+        background-color: white;
+    }
+
+    .task_value {
+        font-size: 9pt;
+    }
+
+    /********** MAIN SKILLS **********/
+
+    .skills_details,
+    .tools_details {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .tools_details {
+        margin: 10pt 0;
+    }
+
+    .language_type, .concept_type {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 7.5pt;
+        padding: 7.5pt 0;
+    }
+
+    .language_type {
+        width: 33%;
+    }
+
+    .concept_type {
+        width: 33%;
+    }
+
+    .tool_type {
+        width: 135pt;
+        margin: 0 auto;
+        padding: 7.5pt 0;
+    }
+
+    .language_type_label,
+    .tool_type_label {
+        color: black;
+        width: 100pt;
+        height: 15pt;
+        font-size: 7.5pt;
+        letter-spacing: normal;
+        text-decoration: underline;
+        background-color: white;
+    }
+
+    .language_block {
+        width: 100pt;
+        height: 26.25pt;
+    }
+
+    .language_logo {
+        width: 18.75pt;
+        margin-right: 7.5pt;
+    }
+
+    .language_label {
+        font-size: 7.5pt;
+        padding-left: 7.5pt;
+    }
+
+    .progress_bar {
+        position: relative;
+        background-color: white;
+        width: 48.75pt;
+        height: 9pt;
+        padding-left: 7.5pt;
+        transform: none;
+    }
+
+    .print-only {
+        display: inline;
+    }
+
+    .progress_circle {
+        height: 6pt;
+        width: 6pt;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .progress_circle_full {
+        background-color: white;
+    }
+
+    .tool_block {
+        width: 30pt;
+        padding: 3.75pt;
+    }
+
+    .tool_logo {
+        height: 15pt;
+    }
+
+    .tool_label {
+        font-size: 7.5pt;
+        padding-top: 3.75pt;
+    }
+
+    /********** MAIN EDUCATION **********/
+
+    .formation_school {
+        font-size: 8.25pt;
+    }
+
+    .formation_school a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .certificate ul {
+        display: none;
+    }
+
+    .jump_line,
+    .jump_line_hobby {
+        margin-left: 9.75pt;
+    }
+
+    .short_width {
+        letter-spacing: normal;
+    }
+
+        /*---------------------------*/
+        /*          FOOTER           */
+        /*---------------------------*/
+
+    .footer {
+        font-size: 11pt;
+        text-align: center;
+        height: 100pt;
+    }
+
+    .hobby_list {
+        flex-direction: row;
+        height: 50pt;
+        padding-left: 15pt;
+    }
+
+    .hobby {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .hobby_logo {
+        width: 10%;
+    }
+
+    .hobby_text {
+        padding-left: 10%;
+    }
+
+    .hobby_title {
+        padding: 3.75pt;
+    }
+
+    .hobby_detail_list {
+        list-style-type: disc;
+        list-style-position: inside;
+        padding-left: 5pt;
+    }
 }
