@@ -6,7 +6,7 @@
     min-width: 200px;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
 }
 
 a {
@@ -139,7 +139,7 @@ a:hover {
     flex-direction: column;
     padding: 5px;
     height: 900px;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
 }
 
 .main_skills {
@@ -147,7 +147,7 @@ a:hover {
     flex-direction: column;
     padding: 5px;
     height: 1050px;
-    background-color: lightpink;
+    /* background-color: lightpink; */
 }
 
 .main_education {
@@ -156,7 +156,7 @@ a:hover {
     justify-content: space-evenly;
     padding: 5px;
     height: 450px;
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
 }
 
 .black_line,
