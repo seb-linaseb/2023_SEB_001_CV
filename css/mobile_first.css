@@ -1,12 +1,21 @@
 /* Container */
-/* 200 => 1440 */
+/* 200 => 1200 */
 
 .container {
     font-family: Arial, Helvetica, sans-serif;
     min-width: 200px;
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
     background-color: lightgrey;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    background-color: lightskyblue;
+    color: blue;
 }
 
 /* Mobile first */
@@ -184,7 +193,7 @@
 
 .experience_list {
     height: 850px;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .certificate_list {
@@ -227,7 +236,7 @@
 
 .list_1,
 .hobby_detail_list {
-    font-size: 10px;
+    font-size: 11px;
     padding-top: 5px;
 }
 
@@ -259,6 +268,11 @@
 
 .oclock {
     padding-left: 13px;
+    font-size: 10px;
+}
+
+.access {
+    font-size: 10px;
 }
 
 .software_row {
@@ -283,12 +297,12 @@
 }
 
 .software_text {
-    font-size: 10px;
+    font-size: 10.7px;
 }
 
 .software_text_access {
     padding-top: 5px;
-    font-size: 10px;
+    font-size: 10.7px;
 }
 
 /*========== CIRCLE STATS DESIGN ==========*/
@@ -484,11 +498,6 @@
     color: black;
 }
 
-.language_block:hover {
-    background-color: lightskyblue;
-    color: blue;
-}
-
 .language_logo {
     display: flex;
     width: 25px;
@@ -566,7 +575,7 @@
 .jump_line_hobby {
     display: block;
     font-weight: bold;
-    margin-left: 13px;
+    margin-left: 15px;
 }
 
 .jump_line_hobby {
@@ -574,7 +583,8 @@
 }
 
 .short_width {
-    letter-spacing: -0.5px;
+    font-size: 10px;
+    letter-spacing: -0.1px;
 }
 
     /*---------------------------*/
@@ -601,7 +611,6 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    /* height: 20px; */
 }
 
 .hobby_title {
@@ -623,7 +632,7 @@
 }
 
 /* Tablet min */
-/* 480 => 1440 */
+/* 480 => 1200 */
 @media screen and (min-width : 480px) {
 
     /*---------------------------*/
@@ -660,6 +669,10 @@
         height: 700px;
     }
 
+    .black_double_line {
+        height: 20px;
+    }
+
     .experience_list {
         height: 650px;
     }
@@ -676,6 +689,31 @@
     .pro_block {
         display: flex;
         justify-content: space-between;
+    }
+
+    .list_1 {
+        font-size: 12px;
+    }
+
+    .list_2 {
+        font-size: 12px;
+    }
+
+    .pro_project_details {
+        font-size: 11px;
+    }
+
+    .oclock {
+        font-size: 11px;
+        padding-left: 4%;
+    }
+
+    .software_text {
+        font-size: 12px;
+    }
+
+    .access {
+        font-size: 11px;
     }
 
     .stats_pro {
@@ -701,6 +739,19 @@
         width: 100%;
     }
 
+    .formation_school {
+        font-size: 14px;
+    }
+
+    .jump_line {
+        font-size: 11px;
+    }
+
+    .short_width {
+        letter-spacing: normal;
+        font-size: 11px;
+    }
+
     /*-----------------------------*/
     /*            FOOTER           */
     /*-----------------------------*/
@@ -719,6 +770,10 @@
         text-align: left;
     }
 
+    .hobby_title {
+        font-size: 14px;
+    }
+
     .hobby_logo {
         width: 40%;
     }
@@ -726,6 +781,11 @@
     .hobby_detail_list {
         list-style-type: disc;
         list-style-position: inside;
+        font-size: 12px;
+    }
+
+    .jump_line_hobby {
+        font-size: 11px;
     }
 }
 
@@ -735,7 +795,7 @@
 }
 
 /* Tablet large min */
-/* 768 => 1440 */
+/* 768 => 1200 */
 @media screen and (min-width : 768px) {
 
     /*---------------------------*/
@@ -766,10 +826,6 @@
         width: 200%;
     }
 
-    .short_width {
-        letter-spacing: normal;
-    }
-
     .hobby_logo {
         width: 20%;
     }
@@ -782,6 +838,7 @@
     /*---------------------------*/
     /*          HEADER           */
     /*---------------------------*/
+
     .header {
         flex-wrap: wrap;
     }
@@ -805,11 +862,10 @@
     .photo_seb {
         width: 80%;
     }
-
 }
 
 /* Desktop */
-/* 1023 => 1440 */
+/* 1023 => 1200 */
 @media screen and (min-width : 1024px) {
 
     /*---------------------------*/
@@ -847,6 +903,61 @@
         text-align: left;
     }
 
+    /*-------------------------*/
+    /*          MAIN           */
+    /*-------------------------*/
+
+    .list_1 {
+        font-size: 13px;
+    }
+
+    .list_2 {
+        font-size: 13px;
+    }
+
+    .pro_project {
+        width: 60%;
+    }
+
+    .pro_project_details {
+        font-size: 12px;
+        padding-left: 12%;
+    }
+
+    .oclock {
+        font-size: 12px;
+        padding-left: 6%;
+    }
+
+    .software_text,
+    .software_text_access {
+        font-size: 13px;
+    }
+
+    .access {
+        font-size: 12px;
+    }
+
+    .jump_line {
+        font-size: 12px;
+        padding-left: 2%;
+    }
+
+    .short_width {
+        font-size: 12px;
+    }
+
+    /*---------------------------*/
+    /*          FOOTER           */
+    /*---------------------------*/
+
+    .hobby_detail_list {
+        font-size: 13px;
+    }
+
+    .jump_line_hobby {
+        font-size: 12px;
+    }
 }
 
 
@@ -1363,11 +1474,6 @@
         font-size: 8.25pt;
     }
 
-    .formation_school a {
-        color: black;
-        text-decoration: none;
-    }
-
     .certificate ul {
         display: none;
     }
@@ -1381,9 +1487,9 @@
         letter-spacing: normal;
     }
 
-        /*---------------------------*/
-        /*          FOOTER           */
-        /*---------------------------*/
+    /*---------------------------*/
+    /*          FOOTER           */
+    /*---------------------------*/
 
     .footer {
         font-size: 11pt;
