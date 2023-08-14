@@ -14,5 +14,14 @@
 <br>
 
 - Version responsive (mobile, tablet, desktop)
-- Version imprimable via la fonction "Imprimer" du navigateur
 - "PDF...able" => pouvoir créer un PDF à partir d'une copie d'écran de la version Desktop du site
+
+
+> Evolutions déjà mises en place
+
+<br>
+
+- Présentation graphique par technologie (Symfony / Ruby on Rails)
+- Présentation graphique par type d'évolution (Fix / Prev / Evol)
+- Progress Bar dynamique de niveau de compétence par language
+- Version imprimable via la fonction "Imprimer" du navigateur
