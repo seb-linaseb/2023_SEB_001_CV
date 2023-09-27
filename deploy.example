@@ -1,0 +1,40 @@
+<?php
+namespace Deployer;
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+use Dotenv\Dotenv;
+
+require 'recipe/common.php';
+
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+// Config
+set('git_ssh_command', 'ssh');
+
+// Uncomment this line to indicate repository ssh url
+// set('repository', 'REPOSITORY_SSH_URL');
+
+add('shared_files', []);
+add('shared_dirs', []);
+add('writable_dirs', []);
+
+// Hosts
+
+// Uncomment this lines to define hosts, users & deploy paths
+// host('NAME_FOR_SERVER_STAGING')
+    // ->set('hostname', 'SERVER_IP_OR_DOMAIN')
+    // ->set('branch', 'BRANCH_NAME_TO_DEPLOY')
+    // ->set('remote_user', 'SSH_USER_TO_SERVER')
+    // ->set('deploy_path', 'PATH_ON_SERVER_WHERE_TO_DEPLOY');
+
+// host('NAME_FOR_SERVER_PROD')
+    // ->set('hostname', 'SERVER_IP_OR_DOMAIN')
+    // ->set('remote_user', 'SSH_USER_TO_SERVER')
+    // ->set('deploy_path', 'PATH_ON_SERVER_WHERE_TO_DEPLOY');
+
+// Hooks
+
+after('deploy:failed', 'deploy:unlock');
+
