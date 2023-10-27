@@ -1,5 +1,9 @@
 # 2023_SEB_001_CV
 
+Mon CV
+
+Pour le voir en ligne => [CV - Sébastien BINAUD](https://dev.linaseb.fr "CV - Sébastien BINAUD")
+
 > Languages et/ou librairies utilisé(e)s
 
 <br>
