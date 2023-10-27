@@ -1,0 +1,15 @@
+.certificate ul {
+    display: none;
+}
+
+.contact_link {
+    text-decoration: none;
+}
+
+.main_experience {
+    height: 1200px;
+}
+
+.main_education {
+    height: 350px;
+}

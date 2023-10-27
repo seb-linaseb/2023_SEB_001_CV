@@ -1,0 +1,1759 @@
+/* Container */
+/* 200 => 1200 */
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: lightgrey; */
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    background-color: lightskyblue;
+    color: blue;
+}
+
+
+
+
+
+/* Mobile first */
+
+/*---------------------------*/
+/*          HEADER           */
+/*---------------------------*/
+
+.header {
+    text-align: center;
+}
+
+.header_job_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    height: 80px;
+}
+
+.header_picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.header_contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+/********** HEADER_JOB_TITLE **********/
+
+.cv_title {
+    color: rgb(68, 114, 196);
+    font-size : 1.125rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cv_title_spe {
+    font-size : 1.125rem;
+    font-weight: bold;
+}
+
+/********** HEADER_PICTURE **********/
+
+.cv_photo,
+.hobby_logo {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 200px;
+}
+
+.photo_seb {
+    width: 60%;
+}
+
+.image_hobby {
+    max-width: 100px;
+}
+
+/********** HEADER_CONTACT **********/
+
+.name_firstname {
+    font-size : 1rem;
+    font-weight: bold;
+}
+
+.marital_status {
+    font-size: 0.75rem;
+}
+
+.address {
+    font-size: 0.80rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.contact{
+    width: 150px;
+}
+
+.contact_link {
+    display: flex;
+    align-items: center;
+}
+
+.contact_logo {
+    width: 15%;
+    margin-right: 0.625rem;
+}
+
+.image_logo {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.contact_text {
+    width: 70%;
+    font-size: 0.75rem;
+    text-align: left;
+}
+
+
+/*---------------------------*/
+/*           MAIN            */
+/*---------------------------*/
+
+.main {
+    font-size: 12px;
+}
+
+.main_experience {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    height: 900px;
+    /* background-color: lightcoral; */
+}
+
+.main_skills {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    height: 1050px;
+    /* background-color: lightpink; */
+}
+
+.main_education {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5px;
+    height: 450px;
+    /* background-color: lightgreen; */
+}
+
+.black_line,
+.black_double_line {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    margin: 0 5px 10px 5px;
+    padding: 10px;
+}
+
+.black_line {
+    height: 20px;
+}
+
+.black_double_line {
+    height: 40px;
+}
+
+.category {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/********** MAIN_EXPERIENCE **********/
+
+.experience_list,
+.certificate_list,
+.hobby_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience_list {
+    height: 850px;
+    justify-content: space-between;
+}
+
+.certificate_list {
+    height: 400px;
+    justify-content: space-around;
+}
+
+.hobby_list {
+    justify-content: space-evenly;
+}
+
+.experience_title,
+.certificate_title {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(68, 114, 196);
+}
+
+.experience_company {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.experience_period,
+.certificate_period {
+    font-size: 10px;
+}
+
+.pro_project,
+.stats_pro_project {
+    padding: 5px 0;
+}
+
+.experience_projects {
+    color: rgb(68, 114, 196);
+    font-style: italic;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.list_1,
+.hobby_detail_list {
+    font-size: 11px;
+    padding-top: 5px;
+}
+
+.list_1 {
+    padding-left: 5px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.list_2 {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 5px 0 0 5px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+
+.pro_project_details {
+    font-size: 10px;
+    font-weight: normal;
+    font-style: italic;
+    margin-left: -5px;
+}
+
+.project_details {
+    font-style: italic;
+}
+
+.oclock {
+    padding-left: 13px;
+    font-size: 10px;
+}
+
+.access {
+    font-size: 10px;
+}
+
+.software_row {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.software_row_large {
+    display: flex;
+    align-items: top;
+}
+
+.software_logo {
+    max-width: 25px;
+    margin: 0 10px;
+}
+
+.image_software {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.software_text {
+    font-size: 10.7px;
+}
+
+.software_text_access {
+    padding-top: 5px;
+    font-size: 10.7px;
+}
+
+/*========== CIRCLE STATS DESIGN ==========*/
+
+.graph_stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5px 0;
+}
+
+.techno {
+    display: flex;
+    flex-direction: column;
+}
+
+.circle_top_value,
+.circle_value {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.75rem;
+    margin-top: -10px;
+}
+
+.circle_top_value {
+    margin-top: 0;
+}
+
+.blue_text {
+    color: #1e51dc;
+}
+
+.red_text {
+    color: red;
+}
+
+.green_text {
+    color: green;
+}
+
+.purple_text {
+    color: purple;
+}
+
+.white_text {
+    color: white;
+}
+
+/* Circle draw */
+
+.circle-wrap {
+    width: 50px;
+    height: 50px;
+    background: #fefcff;
+    border-radius: 50%;
+    transform: rotate(225deg);
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.mask.full,
+.circle .fill {
+    transform: rotate(135deg);
+}
+
+/* Circle missing portion */
+
+.circle-wrap .circle .mask {
+    clip-path: inset(0px calc(100% - 50px) calc(100% - 50px) 24px);
+}
+
+.mask .fill {
+    clip-path: inset(0px calc(100% - 24px) calc(100% - 50px) 0);
+}
+
+/* Coloured circle */
+
+.mask .fill.circle_blue {
+    background-color: #1e51dc;
+}
+
+.mask .fill.circle_red {
+    background-color: red;
+}
+
+/* White interior circle */
+
+.circle-wrap .inside-circle {
+    width: 40.33px;
+    height: 40.33px;
+    border-radius: 50%;
+    background: white;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 4.66px;
+    margin-left: 4.66px;
+    position: absolute;
+    z-index: 100;
+    transform: rotate(135deg);
+}
+
+.techno_logo {
+    display: flex;
+    justify-content: center;
+    margin: 5px auto 0 auto;
+    height: 25px;
+}
+
+.rails {
+    height: 20px;
+    padding: 2.5px;
+}
+
+/*========== ROUND BAR STATS DESIGN ==========*/
+
+.progress-round-xlarge {
+    border-radius:16px;
+    width: 50px;
+}
+
+.progress-red {
+    background-color: red;
+}
+
+.progress-green {
+    background-color: green;
+}
+
+.progress-purple {
+    background-color: purple;
+}
+
+.progress-light-grey {
+    background-color: #f1f1f1;
+}
+
+.task_value {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+/********** MAIN SKILLS **********/
+
+.language_type, .concept_type {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.tool_type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 180px;
+    margin: 0 auto;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+.language_type_label,
+.tool_type_label,
+.concept_type_label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+
+.language_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 35px;
+    text-decoration: none;
+    color: black;
+}
+
+.language_logo {
+    display: flex;
+    width: 25px;
+    margin-right: 2rem;
+}
+
+.language_progress {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.language_label {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.print-only {
+    display: none;
+}
+
+.progress_bar {
+    position: relative;
+    background-color: #333;
+    width: 65px;
+    height: 12px;
+    padding-left: 10px;
+    transform: skew(-30deg);
+}
+
+.progress_circle {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    transform: skew(30deg);
+}
+
+.progress_circle_full {
+    background-color: lightgreen;
+}
+
+.tool_block {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.tool_logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20px;
+}
+
+.tool_label {
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/********** MAIN EDUCATION **********/
+
+.formation_school {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.jump_line,
+.jump_line_hobby {
+    display: block;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.jump_line_hobby {
+    font-weight: normal;
+}
+
+.short_width {
+    font-size: 10px;
+    letter-spacing: -0.1px;
+}
+
+    /*---------------------------*/
+    /*          FOOTER           */
+    /*---------------------------*/
+
+.footer {
+    font-size: 12px;
+    text-align: center;
+    height: 600px;
+}
+
+.hobby_list {
+    height: 500px;
+}
+
+.hobby {
+    display: flex;
+    flex-direction: column;
+    /* font-weight: bold; */
+}
+
+.hobby_logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.hobby_title {
+    font-weight: bold;
+    padding: 5px;
+}
+
+
+
+
+
+    /*-----------------------------------------------*/
+    /*          RESPONSIVE - MEDIA QUERIES           */
+    /*-----------------------------------------------*/
+
+/* Tablet */
+/* 480 => 767 */
+@media screen and (min-width : 480px) and (max-width : 767px) {
+}
+
+/* Tablet min */
+/* 480 => 1200 */
+@media screen and (min-width : 480px) {
+
+    /*---------------------------*/
+    /*          HEADER           */
+    /*---------------------------*/
+
+    .header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header_picture {
+        order: 3;
+        height: 280px;
+    }
+
+    /********** HEADER_JOB_TITLE **********/
+
+    .cv_title, .cv_title_spe {
+        font-size : 2.25rem;
+    }
+
+    /*---------------------------*/
+    /*           MAIN            */
+    /*---------------------------*/
+
+    .main_experience {
+        height: 700px;
+    }
+
+    .main_skills {
+        box-sizing: border-box;
+        order: 2;
+        height: 700px;
+    }
+
+    .black_double_line {
+        height: 20px;
+    }
+
+    .experience_list {
+        height: 650px;
+    }
+
+    .certificate_list {
+        height: 400px;
+    }
+
+    .experience_list,
+    .certificate_list {
+        padding: 10px;
+    }
+
+    .pro_block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .list_1 {
+        font-size: 12px;
+    }
+
+    .list_2 {
+        font-size: 12px;
+    }
+
+    .pro_project_details {
+        font-size: 11px;
+    }
+
+    .oclock {
+        font-size: 11px;
+        padding-left: 4%;
+    }
+
+    .software_text {
+        font-size: 12px;
+    }
+
+    .access {
+        font-size: 11px;
+    }
+
+    .stats_pro {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 45%;
+        text-align: center;
+    }
+
+    .skills_details,
+    .tools_details {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .language_type {
+        width: 50%;
+    }
+
+    .concept_type {
+        width: 100%;
+    }
+
+    .formation_school {
+        font-size: 14px;
+    }
+
+    .jump_line {
+        font-size: 11px;
+    }
+
+    .short_width {
+        letter-spacing: normal;
+        font-size: 11px;
+    }
+
+    /*-----------------------------*/
+    /*            FOOTER           */
+    /*-----------------------------*/
+
+    .footer {
+        height: 400px;
+    }
+
+    .hobby_list {
+        height: 300px;
+    }
+    
+
+    .hobby {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .hobby_title {
+        font-size: 14px;
+    }
+
+    .hobby_logo {
+        width: 40%;
+    }
+
+    .hobby_detail_list {
+        list-style-type: disc;
+        list-style-position: inside;
+        font-size: 12px;
+    }
+
+    .jump_line_hobby {
+        font-size: 11px;
+    }
+}
+
+/* Tablet large */
+/* 768 => 1023 */
+@media screen and (min-width : 768px) and (max-width : 1023px) {
+}
+
+/* Tablet large min */
+/* 768 => 1200 */
+@media screen and (min-width : 768px) {
+
+    /*---------------------------*/
+    /*           MAIN            */
+    /*---------------------------*/
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .main_experience {
+        box-sizing: border-box;
+        order: 1;
+        width: 50%;
+    }
+
+    .main_skills_education {
+        width: 50%;
+        order: 2;
+    }
+
+    .main_education {
+        box-sizing: border-box;
+        order: 3;
+        margin-left: -100%;
+        width: 200%;
+    }
+
+    .hobby_logo {
+        width: 20%;
+    }
+}
+
+/* Tablet + Tablet large */
+/* 480 => 1023 */
+@media screen and (min-width : 480px) and (max-width : 1023px) {
+
+    /*---------------------------*/
+    /*          HEADER           */
+    /*---------------------------*/
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .header_job_title {
+        order: 1;
+        width: 100%;
+    }
+
+    .header_picture {
+        width: 50%;
+    }
+
+    .header_contact {
+        order: 2;
+        width: 50%;
+    }
+
+    /********** HEADER_PICTURE **********/
+
+    .photo_seb {
+        width: 80%;
+    }
+}
+
+/* Desktop */
+/* 1023 => 1200 */
+@media screen and (min-width : 1024px) {
+
+    /*---------------------------*/
+    /*          HEADER           */
+    /*---------------------------*/
+
+    .header_job_title {
+        order: 2;
+        width: 50%;
+        height: 300px;
+    }
+
+    .header_picture {
+        width: 25%;
+    }
+
+    .header_contact {
+        order: 1;
+        width: 25%;
+        align-items: normal;
+        margin-left: 2%;
+        height: 300px;
+    }
+
+    /********** HEADER_JOB_TITLE **********/
+
+    .cv_title, .cv_title_spe {
+        font-size : 36pt;
+    }
+
+    /********** HEADER_PICTURE **********/
+
+    .photo_seb {
+        width: 100%;
+    }
+
+    /********** HEADER_CONTACT **********/
+
+    .contact {
+        width: 200px;
+    }
+
+    .name_firstname {
+        font-size : 16pt;
+    }
+
+    .marital_status {
+        font-size: 10pt;
+    }
+
+    .address {
+        font-size: 12pt;
+        margin-top: 18pt;
+        margin-bottom: 18pt;
+    }
+    .name_firstname,
+    .marital_status,
+    .address {
+        text-align: left;
+    }
+
+    .contact_text {
+        font-size: 13pt;
+    }
+
+    /*-------------------------*/
+    /*          MAIN           */
+    /*-------------------------*/
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* font-size: 9pt; */
+    }
+
+    .main_experience {
+        /* padding: 3.75pt; */
+        /* box-sizing: border-box; */
+        order: 1;
+        width: 50%;
+        height: 1300px;
+    }
+
+    .main_skills_education {
+        width: 50%;
+        order: 2;
+    }
+
+    .main_skills {
+        /* padding: 3.75pt; */
+        box-sizing: border-box;
+        order: 2;
+        height: 850px;
+    }
+
+    .main_education {
+        box-sizing: border-box;
+        order: 3;
+        /* padding: 3.75pt; */
+        height: 450px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .category {
+        font-size: 27px;
+    }
+
+    .black_line {
+        height: 25px;
+    }
+
+    .experience_list,
+    .certificate_list {
+        /* justify-content: space-between; */
+    }
+
+    .experience_list {
+        /* justify-content: space-evenly; */
+        height: 900px;
+    }
+
+    .experience_title,
+    .certificate_title {
+        font-size: 23px;
+    }
+
+    .experience_company {
+        font-size: 20px;
+    }
+
+    .experience_projects {
+        font-size: 18px;
+    }
+
+    .skills_details,
+    .tools_details {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .tools_details {
+        margin: 10pt 0;
+    }
+
+    .language_type, .concept_type {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* font-size: 7.5pt; */
+        /* padding: 7.5pt 0; */
+    }
+
+    .language_type {
+        width: 50%;
+    }
+    
+    .language_block {
+        width: 200px;
+    }
+
+    .language_type_label,
+    .tool_type_label,
+    .concept_type_label {
+        font-size: 18px;
+    }
+
+    .concept_type_label {
+        width: 300px;
+    }
+
+    .language_label,
+    .tool_label {
+        font-size: 15px;
+    }
+
+    .concept_type {
+        width: 100%;
+    }
+
+    .tool_type {
+        width: 225px;
+        /* margin: 0 auto; */
+        /* padding: 7.5pt 0; */
+    }
+
+    .tool_block {
+        width: 65px;
+    }
+    
+    .tool_logo {
+        height: 25px;
+    }
+
+    .list_1 {
+        font-size: 16px;
+    }
+
+    .list_2 {
+        font-size: 16px;
+    }
+
+    .pro_project {
+        width: 80%;
+    }
+
+    .pro_project_details {
+        font-size: 15px;
+        padding-left: 12%;
+    }
+
+    .task_value,
+    .circle_top_value,
+    .circle_value {
+        font-size: 15px;
+    }
+
+    .circle-wrap {
+        margin: 0 auto;
+    }
+
+    .oclock {
+        font-size: 15px;
+        padding-left: 6%;
+    }
+
+    .software_text,
+    .software_text_access {
+        font-size: 16px;
+    }
+
+    .software_row {
+        height: 50px;
+    }
+
+    .software_logo {
+        max-width: 40px;
+    }
+
+    .access {
+        font-size: 15px;
+    }
+
+    .jump_line {
+        font-size: 12px;
+        padding-left: 2%;
+    }
+
+    .short_width {
+        font-size: 12px;
+    }
+
+    .formation_school {
+        font-size: 20px;
+    }
+
+    .experience_period,
+    .certificate_period {
+        font-size: 14px;
+    }
+
+    .language_block {
+        height: 45px;
+    }
+
+    .language_logo {
+        width: 35px;
+    }
+
+    /*---------------------------*/
+    /*          FOOTER           */
+    /*---------------------------*/
+
+    .footer {
+        /* font-size: 11pt; */
+        text-align: center;
+        height: 150px;
+    }
+
+    .hobby_list {
+        flex-direction: row;
+        height: 62px;
+        padding-left: 16px;
+    }
+
+    .hobby {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .hobby_title {
+        /* padding: 3.75pt; */
+        font-size: 18px;
+    }
+
+    .hobby_logo {
+        width: 10%;
+    }
+
+    .hobby_text {
+        padding-left: 12%;
+    }
+
+
+
+    .hobby_detail_list {
+        font-size: 16px;
+        padding-left: 5pt;
+    }
+
+    .jump_line_hobby {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+    /*----------------------------------*/
+    /*          PRINT VERSION           */
+    /*----------------------------------*/
+
+@media print {
+
+    .container {
+        width: 21cm;
+    }
+
+    /*---------------------------*/
+    /*          HEADER           */
+    /*---------------------------*/
+
+    .header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header_job_title {
+        font-size: 10.3pt;
+        order: 2;
+        width: 50%;
+        height: 122pt;
+    }
+
+    .header_picture {
+        order: 3;
+        height: 122pt;
+        width: 25%;
+    }
+
+    .header_contact {
+        height: 150pt;
+        order: 1;
+        width: 25%;
+        align-items: normal;
+        margin-left: 10pt;
+
+    }
+
+    /********** HEADER_JOB_TITLE **********/
+
+    .cv_title, .cv_title_spe {
+        font-size : 28pt;
+    }
+
+    /********** HEADER_PICTURE **********/
+
+    .cv_photo,
+    .hobby_logo {
+        width: 100pt;
+    }
+
+    .photo_seb {
+        width: 100%;
+    }
+
+    .image_hobby {
+        height: 31pt;
+    }
+
+    /********** HEADER_CONTACT **********/
+
+    .name_firstname {
+        font-size : 11pt;
+    }
+
+    .marital_status {
+        font-size: 7pt;
+    }
+
+    .address {
+        font-size: 8.3pt;
+        margin-top: 12pt;
+        margin-bottom: 12pt;
+    }
+
+    .name_firstname,
+    .marital_status,
+    .address {
+        text-align: left;
+    }
+
+    .contact{
+        width: 100pt;
+    }
+
+    .contact_link {
+        text-decoration: none;
+        color: black;
+    }
+
+    .contact_logo {
+        margin-right: 5.7pt;
+    }
+
+    .contact_text {
+        font-size: 9pt;
+    }
+
+    /*---------------------------*/
+    /*           MAIN            */
+    /*---------------------------*/
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 9pt;
+    }
+
+    .main_experience {
+        padding: 3.75pt;
+        box-sizing: border-box;
+        order: 1;
+        width: 50%;
+        height: 537pt;
+    }
+
+    .main_skills_education {
+        width: 50%;
+        order: 2;
+    }
+
+    .main_skills {
+        padding: 3.75pt;
+        box-sizing: border-box;
+        order: 2;
+        height: 357pt;
+    }
+
+    .main_education {
+        box-sizing: border-box;
+        order: 3;
+        padding: 3.75pt;
+        height: 180pt;
+    }
+
+    .black_line,
+    .black_double_line {
+        border-top: 3.75pt solid black;
+        border-bottom: 3.75pt solid black;
+        margin: 0 3.75pt 7.5pt 3.75pt;
+        padding: 7.5pt;
+    }
+
+    .black_line {
+        height: 15pt;
+    }
+
+    .black_double_line {
+        height: 13.5pt;
+    }
+
+    .category {
+        font-size: 13.5pt;
+    }
+
+    /********** MAIN_EXPERIENCE **********/
+
+    .experience_list,
+    .certificate_list {
+        justify-content: space-between;
+    }
+
+    .experience_list {
+        height: 488pt;
+    }
+
+    .certificate_list {
+        height: 150pt;
+    }
+
+    .experience_list,
+    .certificate_list {
+        padding: 7.5pt;
+    }
+
+    .experience_title,
+    .certificate_title {
+        font-size: 12pt;
+    }
+
+    .experience_company {
+        font-size: 10.5pt;
+    }
+
+    .experience_period,
+    .certificate_period {
+        font-size: 7.5pt;
+    }
+
+    .pro_block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .stats_pro {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 45%;
+        text-align: center;
+    }
+
+
+    .pro_project,
+    .stats_pro_project {
+        padding: 3.75pt 0;
+    }
+
+    .experience_projects {
+        font-size: 10.5pt;
+        padding: 3.75pt 0;
+    }
+
+    .stats_pro_project h3.experience_projects {
+        display: none;
+    }
+
+    .list_1,
+    .hobby_detail_list {
+        font-size: 8pt;
+        padding-top: 3.75pt;
+    }
+
+    .list_1 {
+        padding-left: 3.75pt;
+    }
+
+    .list_2 {
+        padding: 3.75pt 0 0 3.75pt;
+        font-size: 8.25pt;
+    }
+
+
+    .pro_project_details {
+        font-size: 8pt;
+        margin-left: -3.75pt;
+    }
+
+    .oclock {
+        padding-left: 9.75pt;
+    }
+
+    .software_row {
+        height: 22.5pt;
+    }
+
+    .software_logo {
+        max-width: 18.75pt;
+        margin: 0 7.5pt;
+    }
+
+    .image_software {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .software_text {
+        font-size: 8pt;
+    }
+
+    .software_text_access {
+        padding-top: 3.75pt;
+        font-size: 8pt;
+    }
+
+    /*========== CIRCLE STATS DESIGN ==========*/
+
+    .graph_stats {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 3.75pt 0;
+    }
+
+    .techno {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .circle_top_value,
+    .circle_value {
+        display: block;
+        font-weight: bold;
+        text-align: center;
+        font-size: 9pt;
+        margin-top: -5.63pt;
+    }
+
+    .circle_top_value {
+        margin-top: 0;
+    }
+
+    .blue_text {
+        color: #1e51dc;
+    }
+
+    .red_text {
+        color: red;
+    }
+
+    .green_text {
+        color: green;
+    }
+
+    .purple_text {
+        color: purple;
+    }
+
+    /* Circle draw */
+
+    .circle-wrap {
+        width: 37.5pt;
+        height: 37.5pt;
+        background: #fefcff;
+        border-radius: 50%;
+    }
+
+    .circle-wrap .circle .mask,
+    .circle-wrap .circle .fill {
+        width: 37.5pt;
+        height: 37.5pt;
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    /* Circle missing portion */
+
+    .circle-wrap .circle .mask {
+        clip-path: inset(0pt calc(100% - 37.5pt) calc(100% - 37.5pt) 18pt);
+    }
+
+    .mask .fill {
+        clip-path: inset(0pt calc(100% - 18pt) calc(100% - 37.5pt) 0);
+    }
+
+    /* Coloured circle */
+
+    .mask .fill.circle_blue {
+        background-color: white;
+    }
+
+    .mask .fill.circle_red {
+        background-color: white;
+    }
+
+    /* White interior circle */
+
+    .circle-wrap .inside-circle {
+        width: 30.25pt;
+        height: 30.25pt;
+        border-radius: 50%;
+        background: white;
+        line-height: 30pt;
+        text-align: center;
+        margin-top: 3.5pt;
+        margin-left: 3.5pt;
+        position: absolute;
+        z-index: 100;
+    }
+
+    .techno_logo {
+        display: flex;
+        justify-content: center;
+        margin: 3.75pt auto 0 auto;
+        height: 18.75pt;
+    }
+
+    .rails {
+        height: 15pt;
+        padding: 1.88pt;
+    }
+
+    /*========== ROUND BAR STATS DESIGN ==========*/
+
+    .progress-round-xlarge {
+        border-radius:12pt;
+        width: 37.5pt;
+    }
+
+    .progress-red {
+        background-color: white;
+    }
+
+    .progress-green {
+        background-color: white;
+    }
+
+    .progress-purple {
+        background-color: white;
+    }
+
+    .progress-light-grey {
+        background-color: white;
+    }
+
+    .task_value {
+        font-size: 9pt;
+    }
+
+    /********** MAIN SKILLS **********/
+
+    .skills_details,
+    .tools_details {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .tools_details {
+        margin: 10pt 0;
+    }
+
+    .language_type, .concept_type {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 7.5pt;
+        padding: 7.5pt 0;
+    }
+
+    .language_type {
+        width: 33%;
+    }
+
+    .concept_type {
+        width: 33%;
+    }
+
+    .tool_type {
+        width: 135pt;
+        margin: 0 auto;
+        padding: 7.5pt 0;
+    }
+
+    .language_type_label,
+    .tool_type_label,
+    .concept_type_label {
+        color: black;
+        width: 100pt;
+        height: 15pt;
+        font-size: 7.5pt;
+        letter-spacing: normal;
+        text-decoration: underline;
+        background-color: white;
+    }
+
+    .language_block {
+        width: 100pt;
+        height: 26.25pt;
+    }
+
+    .language_logo {
+        width: 18.75pt;
+        margin-right: 7.5pt;
+    }
+
+    .language_label {
+        font-size: 7.5pt;
+        padding-left: 7.5pt;
+    }
+
+    .progress_bar {
+        position: relative;
+        background-color: white;
+        width: 48.75pt;
+        height: 9pt;
+        padding-left: 7.5pt;
+        transform: none;
+    }
+
+    .print-only {
+        display: inline;
+    }
+
+    .progress_circle {
+        height: 6pt;
+        width: 6pt;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .progress_circle_full {
+        background-color: white;
+    }
+
+    .tool_block {
+        width: 30pt;
+        padding: 3.75pt;
+    }
+
+    .tool_logo {
+        height: 15pt;
+    }
+
+    .tool_label {
+        font-size: 7.5pt;
+        padding-top: 3.75pt;
+    }
+
+    /********** MAIN EDUCATION **********/
+
+    .formation_school {
+        font-size: 8.25pt;
+    }
+
+    .certificate ul {
+        display: none;
+    }
+
+    .jump_line,
+    .jump_line_hobby {
+        margin-left: 9.75pt;
+    }
+
+    .short_width {
+        letter-spacing: normal;
+    }
+
+    /*---------------------------*/
+    /*          FOOTER           */
+    /*---------------------------*/
+
+    .footer {
+        font-size: 11pt;
+        text-align: center;
+        height: 100pt;
+    }
+
+    .hobby_list {
+        flex-direction: row;
+        height: 50pt;
+        padding-left: 15pt;
+    }
+
+    .hobby {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .hobby_logo {
+        width: 10%;
+    }
+
+    .hobby_text {
+        padding-left: 10%;
+    }
+
+    .hobby_title {
+        padding: 3.75pt;
+    }
+
+    .hobby_detail_list {
+        list-style-type: disc;
+        list-style-position: inside;
+        padding-left: 5pt;
+    }
+}
