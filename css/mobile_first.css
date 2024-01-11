@@ -219,6 +219,15 @@ a:hover {
 .experience_company {
     font-size: 14px;
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience_reco {
+    color: rgb(10, 192, 113);
+    border: 1px solid rgb(10, 192, 113);
+    padding: 5px;
 }
 
 .experience_period,
