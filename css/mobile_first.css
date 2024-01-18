@@ -123,6 +123,10 @@ a:hover {
     max-width: 100%;
 }
 
+.speciality_logo {
+    padding: 0 5px;
+}
+
 .contact_text {
     width: 70%;
     font-size: 0.75rem;
@@ -250,6 +254,20 @@ a:hover {
     padding: 5px 0;
 }
 
+.language_experience_label {
+    font-size: 15px;
+    padding-left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.experience_graphs {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
 .list_1,
 .hobby_detail_list {
     font-size: 11px;
@@ -270,8 +288,14 @@ a:hover {
     font-size: 11px;
 }
 
+.list_2_language {
+    list-style-type: none;
+    text-align: center;
+    padding: 5px 0;
+}
 
-.pro_project_details {
+.pro_project_details,
+.pro_project_details_language {
     font-size: 10px;
     font-weight: normal;
     font-style: italic;
@@ -327,7 +351,8 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 5px 0;
+    /* margin: 5px 0; */
+    margin: auto 0;
 }
 
 .techno {
@@ -346,6 +371,14 @@ a:hover {
 
 .circle_top_value {
     margin-top: 0;
+}
+
+.period_stats {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
 }
 
 .blue_text {
@@ -437,6 +470,12 @@ a:hover {
 .rails {
     height: 20px;
     padding: 2.5px;
+}
+
+.nb_projects {
+    display: block;
+    margin-top: -30px;
+    font-size: 0.6rem;
 }
 
 /*========== ROUND BAR STATS DESIGN ==========*/
@@ -716,6 +755,14 @@ a:hover {
         font-size: 12px;
     }
 
+    .list_2_large {
+        width: 200%;
+    }
+
+    .list_2_hidden {
+        visibility: hidden;
+    }
+
     .pro_project_details {
         font-size: 11px;
     }
@@ -967,6 +1014,14 @@ a:hover {
         height: 1300px;
     }
 
+    .experience_languages {
+        display: flex;
+    }
+
+    .experience_languages .pro_block_new {
+        width: 50%;
+    }
+
     .main_skills_education {
         width: 50%;
         order: 2;
@@ -1096,6 +1151,11 @@ a:hover {
     .pro_project_details {
         font-size: 15px;
         padding-left: 12%;
+    }
+
+    .pro_project_details_language {
+        font-size: 14px;
+        text-align: center;
     }
 
     .task_value,
