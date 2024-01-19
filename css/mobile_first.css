@@ -146,8 +146,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     padding: 5px;
-    height: 900px;
-    /* background-color: lightcoral; */
 }
 
 .main_skills {
@@ -155,7 +153,6 @@ a:hover {
     flex-direction: column;
     padding: 5px;
     height: 1050px;
-    /* background-color: lightpink; */
 }
 
 .main_education {
@@ -163,8 +160,7 @@ a:hover {
     flex-direction: column;
     justify-content: space-evenly;
     padding: 5px;
-    height: 450px;
-    /* background-color: lightgreen; */
+    height: 400px;
 }
 
 .black_line,
@@ -200,7 +196,7 @@ a:hover {
 }
 
 .experience_list {
-    height: 850px;
+    height: 1100px;
     justify-content: space-between;
 }
 
@@ -232,7 +228,7 @@ a:hover {
     color: rgb(10, 192, 113);
     border: 1px solid rgb(10, 192, 113);
     padding: 5px;
-    width: 10rem;
+    width: 7rem;
     font-size: 0.8rem;
     text-align: center;
 }
@@ -240,6 +236,18 @@ a:hover {
 .experience_period,
 .certificate_period {
     font-size: 10px;
+}
+
+.stats_block {
+    margin-top: 12px;
+}
+
+.skills_by_language_desktop {
+    display: none;
+}
+
+.skills_large {
+    display: none;
 }
 
 .pro_project,
@@ -256,9 +264,9 @@ a:hover {
 
 .language_experience_label {
     font-size: 15px;
+    font-weight: bold;
     padding-left: 0;
-    margin-top: auto;
-    margin-bottom: auto;
+    padding-top: 5px;
     text-align: center;
 }
 
@@ -351,7 +359,6 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    /* margin: 5px 0; */
     margin: auto 0;
 }
 
@@ -660,7 +667,6 @@ a:hover {
 .hobby {
     display: flex;
     flex-direction: column;
-    /* font-weight: bold; */
 }
 
 .hobby_logo {
@@ -715,10 +721,6 @@ a:hover {
     /*           MAIN            */
     /*---------------------------*/
 
-    .main_experience {
-        height: 700px;
-    }
-
     .main_skills {
         box-sizing: border-box;
         order: 2;
@@ -727,10 +729,6 @@ a:hover {
 
     .black_double_line {
         height: 20px;
-    }
-
-    .experience_list {
-        height: 650px;
     }
 
     .certificate_list {
@@ -756,11 +754,7 @@ a:hover {
     }
 
     .list_2_large {
-        width: 200%;
-    }
-
-    .list_2_hidden {
-        visibility: hidden;
+        width: 100%;
     }
 
     .pro_project_details {
@@ -878,9 +872,38 @@ a:hover {
         width: 50%;
     }
 
+    .experience_languages {
+        display: flex;
+    }
+
+    .experience_list {
+        height: 750px;
+    }
+
+    .experience_languages .pro_block_new {
+        width: 50%;
+    }
+
+    .skills_by_language_mobile {
+        display: none
+    }
+
+    .skills_by_language_desktop {
+        display: block;
+    }
+    
+    .skills_large {
+        display: block;
+        width: 100%;
+    }
+
     .main_skills_education {
         width: 50%;
         order: 2;
+    }
+
+    .main_skills {
+        height: 850px;
     }
 
     .main_education {
@@ -1003,23 +1026,15 @@ a:hover {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        /* font-size: 9pt; */
     }
 
     .main_experience {
-        /* padding: 3.75pt; */
-        /* box-sizing: border-box; */
         order: 1;
         width: 50%;
-        height: 1300px;
     }
 
-    .experience_languages {
-        display: flex;
-    }
-
-    .experience_languages .pro_block_new {
-        width: 50%;
+    .experience_list {
+        height: 1000px;
     }
 
     .main_skills_education {
@@ -1028,16 +1043,13 @@ a:hover {
     }
 
     .main_skills {
-        /* padding: 3.75pt; */
         box-sizing: border-box;
         order: 2;
-        height: 850px;
     }
 
     .main_education {
         box-sizing: border-box;
         order: 3;
-        /* padding: 3.75pt; */
         height: 450px;
         width: 100%;
         margin-left: 0;
@@ -1049,16 +1061,6 @@ a:hover {
 
     .black_line {
         height: 25px;
-    }
-
-    .experience_list,
-    .certificate_list {
-        /* justify-content: space-between; */
-    }
-
-    .experience_list {
-        /* justify-content: space-evenly; */
-        height: 900px;
     }
 
     .experience_title,
@@ -1091,8 +1093,6 @@ a:hover {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        /* font-size: 7.5pt; */
-        /* padding: 7.5pt 0; */
     }
 
     .language_type {
@@ -1124,8 +1124,6 @@ a:hover {
 
     .tool_type {
         width: 225px;
-        /* margin: 0 auto; */
-        /* padding: 7.5pt 0; */
     }
 
     .tool_block {
@@ -1221,7 +1219,6 @@ a:hover {
     /*---------------------------*/
 
     .footer {
-        /* font-size: 11pt; */
         text-align: center;
         height: 150px;
     }
@@ -1238,7 +1235,6 @@ a:hover {
     }
 
     .hobby_title {
-        /* padding: 3.75pt; */
         font-size: 18px;
     }
 
@@ -1249,8 +1245,6 @@ a:hover {
     .hobby_text {
         padding-left: 12%;
     }
-
-
 
     .hobby_detail_list {
         font-size: 16px;
@@ -1386,6 +1380,10 @@ a:hover {
         height: 537pt;
     }
 
+    .experience_languages {
+        display: flex;
+    }
+
     .main_skills_education {
         width: 50%;
         order: 2;
@@ -1464,14 +1462,16 @@ a:hover {
         justify-content: space-between;
     }
 
+    .experience_languages .pro_block_new {
+        width: 50%;
+    }
+
     .stats_pro {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        width: 45%;
         text-align: center;
     }
-
 
     .pro_project,
     .stats_pro_project {
@@ -1487,9 +1487,26 @@ a:hover {
         display: none;
     }
 
+    .skills_by_language_mobile {
+        display: none
+    }
+
+    .skills_by_language_desktop {
+        display: block;
+    }
+    
+    .skills_large {
+        display: block;
+        width: 100%;
+    }
+
+    .stats_block {
+        margin-top: 0;
+    }
+
     .list_1,
     .hobby_detail_list {
-        font-size: 8pt;
+        font-size: 7.5pt;
         padding-top: 3.75pt;
     }
 
@@ -1506,6 +1523,14 @@ a:hover {
     .pro_project_details {
         font-size: 8pt;
         margin-left: -3.75pt;
+    }
+
+    .experience_graphs {
+        display: none;
+    }
+
+    .pro_project_details_language {
+        font-size: 7.5pt;
     }
 
     .oclock {
